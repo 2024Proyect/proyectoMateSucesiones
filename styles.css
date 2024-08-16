@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2B2B2B; 
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #e2c418; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #2B2B2B; 
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.controls input, .controls select {
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #FF8C69; 
+    border: none;
+    border-radius: 5px;
+    color: #2B2B2B; 
+}
+
+.controls button {
+    background-color: #2B2B2B; 
+    color: #FFD700; 
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #FFFAF0; 
+    color: #2B2B2B; 
+}
+
+.output {
+    background-color: #4b4a4a; 
+    color: #d8a8a8; 
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+    margin-top: 10px;
+}
+
+.pict-figure {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #FFD700; 
+    vertical-align: top;
+}
+
+.fractal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 10px 0;
+}
+
+.fractal-content {
+    display: block;
+    text-align: center;
+}

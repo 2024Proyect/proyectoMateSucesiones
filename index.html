@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesiones Avanzadas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Sucesiones Avanzadas</h1>
+
+        <div class="section">
+            <h2>Sucesiones Pictográficas Avanzadas</h2>
+            <div class="controls">
+                <label for="pictType">Tipo de sucesión:</label>
+                <select id="pictType">
+                    <option value="rotate">Rotación</option>
+                    <option value="size">Cambio de Tamaño</option>
+                    <option value="color">Cambio de Color</option>
+                    <option value="fractal">Fractal</option>
+                </select>
+                <label for="pictCount">Número de Figuras:</label>
+                <input type="number" id="pictCount" value="5" min="1">
+                <button onclick="generatePictographic()">Generar</button>
+            </div>
+            <div id="pictOutput" class="output"></div>
+        </div>
+
+        <div class="section">
+            <h2>Sucesiones Aritméticas Avanzadas</h2>
+            <div class="controls">
+                <label for="aritFirstTerm">Primer Término:</label>
+                <input type="number" id="aritFirstTerm" value="1">
+                <label for="aritDifference">Diferencia:</label>
+                <input type="number" id="aritDifference" value="2">
+                <label for="aritTerms">Número de Términos:</label>
+                <input type="number" id="aritTerms" value="5">
+                <button onclick="generateArithmetic()">Generar</button>
+            </div>
+            <div id="aritOutput" class="output"></div>
+        </div>
+
+        <div class="section">
+            <h2>Sucesiones Numéricas Avanzadas</h2>
+            <div class="controls">
+                <label for="numType">Tipo de sucesión:</label>
+                <select id="numType">
+                    <option value="fibonacci">Fibonacci</option>
+                    <option value="geometric">Geométrica</option>
+                    <option value="custom">Personalizada</option>
+                </select>
+                <label for="numTerms">Número de Términos:</label>
+                <input type="number" id="numTerms" value="5">
+                <button onclick="generateNumeric()">Generar</button>
+            </div>
+            <div id="numOutput" class="output"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
